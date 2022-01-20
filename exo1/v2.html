@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Value to convert -->
+    <div>
+        <input type="number" id="fromConvert" step="0.01" />
+        <select id="fromCurrency">
+            <option value="euro" selected>€</option>
+            <option value="dollar">$</option>
+            <option value="chf">CHF</option>
+        </select>
+        <!-- button to launch the conversion -->
+        <input type="button" value="convertir" id="btnConvert" />
+
+    </div>
+    <!-- Where the result appears -->
+    <div>
+        <input type="number" id="toConvert" disabled />
+        <select id="toCurrency">
+            <option value="euro">€</option>
+            <option value="dollar" selected>$</option>
+            <option value="chf">CHF</option>
+        </select>
+    </div>
+</body>
+<script src="assets/js/jquery-3.6.0.js"></script>
+<script src="assets/js/main2.js"></script>
+
+</html>
