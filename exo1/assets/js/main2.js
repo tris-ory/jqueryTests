@@ -15,6 +15,7 @@ var toValue = $('#toConvert');
 $("select").change(function () {
     let from = fromCurrencySelector.val();
     let to = toCurrencySelector.val();
+    // Reset the result field
     toValue.val('');
     if (from == to) {
         if (to == "dollar") {
@@ -30,7 +31,6 @@ $('#btnConvert').click(function(){
     let to = toCurrencySelector.val();
     let valueContent = fromValue.val();
     let result;
-    // If from Euro
     if (from == "euro") {
         if (to == "dollar") {
             result =  (valueContent * euroToDollar).toFixed(2);
@@ -40,7 +40,6 @@ $('#btnConvert').click(function(){
             result =   (valueContent * euroToCHF).toFixed(2);
         }
     }
-    // Elif from dollar
     else if (from == "dollar") {
         if (to == "euro") {
             result =   (valueContent * dollarToEuro).toFixed(2);
@@ -50,7 +49,6 @@ $('#btnConvert').click(function(){
             result =   (valueContent * dollarToCHF).toFixed(2);
         }
     }
-    // Elif CHF
     else {
         if (to == "euro") {
             console.log("euro");

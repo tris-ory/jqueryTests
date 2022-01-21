@@ -1,17 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .horse {
-    width: 200px;
-    height: 200px;
-    padding: 15px;
-    margin-bottom:5px;
+    width: 15vh;
+    height: 15vh;
+    padding:    5px;
+    margin-bottom: 5px;
 }
 
-#red{
+.horse img {
+    width: 100%;
+    height: auto;
+}
+
+#red {
     background-color: red;
 }
 
@@ -21,4 +26,8 @@
 
 #blue {
     background-color: blue;
+}
+
+#result {
+    display: none;
 }
