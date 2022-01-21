@@ -16,18 +16,32 @@
     height: auto;
 }
 
-#red {
+.red {
     background-color: red;
 }
 
-#green {
+.green {
     background-color: green;
 }
 
-#blue {
+.blue {
     background-color: blue;
 }
 
+.purple {
+    background-color: purple;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+#race{
+    display: none;
+}
+#start{
+    display:none;
+}
 #result {
     display: none;
 }

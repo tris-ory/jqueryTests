@@ -6,7 +6,7 @@
  */
 
 function randomInt(min, max) {
-    // We can obtain a number between 0 an k, so if min is != 0,
+    // We can obtain a number between 0 and k, so if min is != 0,
     // we need to calc how much integers we can obtain
     let size = (min != 0) ? max - min : max;
     let randomNumber = Math.floor(Math.random() * size);

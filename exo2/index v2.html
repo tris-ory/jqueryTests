@@ -10,19 +10,20 @@
 </head>
 
 <body>
-    <!-- Version 1 : Only 3 div-->
-    <!-- <div id="race"> -->
-        <div id="result"></div>
-        <div class="horse" id="red"><img src="assets/img/reiter-clipart-6.jpg" alt="Cavalier sur son cheval" /></div>
-        <div class="horse" id="green"><img src="assets/img/reiter-clipart-6.jpg" alt="Cavalier sur son cheval" /></div>
-        <div class="horse" id="blue"><img src="assets/img/reiter-clipart-6.jpg" alt="Cavalier sur son cheval" /></div>
-    <!-- </div> -->
+    <!-- Version 2 : Only 2 to 5 div -->
+    <div id="result"></div>
+    <div id="horsesChoice">
+        <label for="horseQuantity">Nombre de coureurs</label>
+        <input type="number" name="horseQuantity" id="horseQuantity" min="2" step="1" />
+        <input type="button" value="Valider" id="validNumber" />
+    </div>
+    <div id="race"></div>
     <div>
         <input type="button" name="start" id="start" value="Lancer la course" />
     </div>
 </body>
 <script src="assets/js/libs/jquery-3.6.0.js"></script>
 <script src="assets/js/libs/myLib.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main2.js"></script>
 
 </html>
